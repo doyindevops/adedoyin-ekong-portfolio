@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
   <meta property="og:description" content="Explore my DevOps and DevSecOps projects on AWS, Kubernetes, Terraform, and CI/CD." />
   <meta property="og:url" content="https://adedoyin-ekong-portfolio.vercel.app" />
   <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -17,128 +19,61 @@
       --light: #E5E7EB;
       --dark: #40366B;
     }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
   </style>
 </head>
 <body class="bg-[--dark] text-white font-sans scroll-smooth">
 
-  <!-- Navbar -->
-  <nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
-      <div class="md:hidden">
-        <button id="menu-btn" class="text-white focus:outline-none">&#9776;</button>
-      </div>
-      <ul id="menu" class="hidden md:flex space-x-6">
-        <li><a href="#about" class="hover:text-[--accent]">About</a></li>
-        <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
-        <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
-        <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
-      </ul>
+<!-- Navbar -->
+<nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#about" class="hover:text-[--accent]">About</a></li>
+      <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
+      <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
+      <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-[--primary] text-white text-center py-20">
+  <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
+  <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
+</section>
+
+<!-- About -->
+<section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+    <p class="mb-4">I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
+    I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
+    With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
+    I’m passionate about tightening feedback loops and minimizing risks without compromising speed.</p>
+    <p class="mt-6">I also love documenting my experiences and knowledge.<br />
+    Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.</p>
+    <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-16 px-4 bg-[--primary] text-[--light]">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-white text-center mb-8">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div><h3 class="text-xl font-semibold text-white">CI/CD & Automation</h3><p>GitHub Actions, GitLab CI, Jenkins, AWS CodePipeline</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Infrastructure as Code</h3><p>Terraform, Terragrunt, CloudFormation, Pulumi</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Cloud Platforms</h3><p>AWS (EKS, Lambda, EC2, S3, IAM, CloudWatch), Azure, GCP</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Containers & Orchestration</h3><p>Docker, Kubernetes, Helm, ArgoCD, Kustomize</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Monitoring & Logging</h3><p>Prometheus, Grafana, ELK/EFK Stack, CloudWatch</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Security & DevSecOps</h3><p>Trivy, Checkov, Gitleaks, SonarCloud, OWASP ZAP</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Scripting & Automation</h3><p>Bash, Python, YAML, Makefile</p></div>
+      <div><h3 class="text-xl font-semibold text-white">Collaboration</h3><p>Git, GitHub, Jira, Confluence, Slack</p></div>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="bg-[--primary] text-white text-center py-20">
-    <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
-    <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
-      <p class="mb-4">
-        I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
-        I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
-        With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
-        I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
-      </p>
-      <p class="mt-6">
-        I also love documenting my experiences and knowledge.<br />
-        Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
-      </p>
-      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-16 px-4 bg-[--primary] text-[--light]">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">Skills</h2>
-      <p>CI/CD · Kubernetes · AWS · Terraform · Jenkins · GitHub Actions · Docker · EKS · Monitoring · DevSecOps · WordPress Infrastructure · Helm · ArgoCD · Git · Linux · Cloud Security</p>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center text-white mb-10">Projects</h2>
-
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Microservices Platforms</h3>
-        <div class="bg-black p-4 rounded mb-4">
-          <strong>EKS Microservices Platform (GitOps)</strong>
-          <p>Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
-        </div>
-      </div>
-
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">DevSecOps Pipelines</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-black p-4 rounded">
-            <strong>FortiStack Secure DevSecOps Pipeline</strong>
-            <p>Fully automated DevSecOps pipeline with Terraform, GitHub Actions, Docker, ECR, EKS, and vulnerability scanning.</p>
-          </div>
-          <div class="bg-black p-4 rounded">
-            <strong>Secure Banking CI/CD Pipeline</strong>
-            <p>Production-grade pipeline for containerized banking apps using GitHub Actions, AWS Fargate, and security tools.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Serverless Projects</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-black p-4 rounded">
-            <strong>Fintech Payment System (Serverless)</strong>
-            <p>Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
-          </div>
-          <div class="bg-black p-4 rounded">
-            <strong>Logistics Tracking Platform</strong>
-            <p>Real-world logistics tracking API using AWS Serverless, Terraform, GitHub Actions, and Grafana for observability.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mb-8">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Monitoring</h3>
-        <div class="bg-black p-4 rounded">
-          <strong>Monitoring Stack with Prometheus & Grafana</strong>
-          <p>Deployed node-exporter, kube-state-metrics, Prometheus, and Grafana with alerting and custom dashboards.</p>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Infrastructure as Code (IaC)</h3>
-        <div class="bg-black p-4 rounded">
-          <strong>BoostPoint WordPress Infrastructure</strong>
-          <p>Fully automated WordPress infrastructure on AWS using Terraform with a modular, phased, and documented DevOps approach.</p>
-        </div>
-      </div>
-
-      <p class="text-center mt-8"><a href="https://www.youtube.com/@doyinekong/playlists" class="text-[--accent] underline">📺 Link to All Project Videos</a></p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 px-4 bg-[--primary] text-[--light]">
-    <div class="max-w-2xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">Contact</h2>
-      <p class="mb-2">📧 <a href="mailto:adedoyinekong@gmail.com" class="underline text-[--accent]">adedoyinekong@gmail.com</a></p>
-      <p class="mb-2">💼 <a href="https://www.linkedin.com/in/adedoyinekong" class="underline text-[--accent]" target="_blank">LinkedIn</a></p>
-      <p>📁 <a href="https://github.com/doyindevops" class="underline text-[--accent]" target="_blank">GitHub</a></p>
-    </div>
-  </section>
-
+  </div>
+</section>
 </body>
 </html>
