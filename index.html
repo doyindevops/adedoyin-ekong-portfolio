@@ -1,22 +1,71 @@
-<!-- About -->
-<section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
-    <p class="mb-4">
-      I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
-      I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
-      With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
-      I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
-    </p>
-    <p class="mt-6">
-      I also love documenting my experiences and knowledge.
-      Through personal stories, real projects, and practical walkthroughs,
-      I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
-    </p>
-    <p class="mt-4">
-      <a href="https://medium.com/@adedoyinekong" class="text-[--accent] underline hover:text-white">
-        📘 Visit My Medium Blog
-      </a>
-    </p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps & DevSecOps Engineer Portfolio</title>
+  <meta name="description" content="Adedoyin Ekong's professional DevOps and DevSecOps portfolio.">
+  <meta property="og:title" content="DevOps & DevSecOps Engineer Portfolio" />
+  <meta property="og:description" content="Explore my DevOps and DevSecOps projects on AWS, Kubernetes, Terraform, and CI/CD." />
+  <meta property="og:url" content="https://adedoyin-ekong-portfolio.vercel.app" />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #5E548E;
+      --accent: #BEA4E3;
+      --light: #E5E7EB;
+      --dark: #40366B;
+    }
+  </style>
+</head>
+<body class="bg-[--dark] text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">&#9776;</button>
+      </div>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-[--accent]">About</a></li>
+        <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
+        <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
+      </ul>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col px-4 mt-2 space-y-2">
+      <li><a href="#about" class="block hover:text-[--accent]">About</a></li>
+      <li><a href="#skills" class="block hover:text-[--accent]">Skills</a></li>
+      <li><a href="#projects" class="block hover:text-[--accent]">Projects</a></li>
+      <li><a href="#contact" class="block hover:text-[--accent]">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-[--primary] text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
+    <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+      <p class="mb-4">
+        I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
+        I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
+        With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
+        I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
+      </p>
+      <p class="mt-6">
+        I also love documenting my experiences and knowledge.<br />
+        Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
+      </p>
+      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
+    </div>
+  </section>
+
+</body>
+</html>
