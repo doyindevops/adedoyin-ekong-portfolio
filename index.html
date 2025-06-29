@@ -21,79 +21,51 @@
 </head>
 <body class="bg-[--dark] text-white font-sans">
 
-  <!-- Projects -->
-  <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10 text-white">Projects</h2>
-
-      <!-- Group: Microservices Platforms -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Microservices Platforms</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">EKS Microservices Platform (GitOps)</h4>
-            <p class="mb-2">Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
-          </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">&#9776;</button>
       </div>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-[--accent]">About</a></li>
+        <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
+        <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
+      </ul>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col px-4 mt-2 space-y-2">
+      <li><a href="#about" class="block hover:text-[--accent]">About</a></li>
+      <li><a href="#skills" class="block hover:text-[--accent]">Skills</a></li>
+      <li><a href="#projects" class="block hover:text-[--accent]">Projects</a></li>
+      <li><a href="#contact" class="block hover:text-[--accent]">Contact</a></li>
+    </ul>
+  </nav>
 
-      <!-- Group: DevSecOps Pipelines -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold text-[--accent] mb-4">DevSecOps Pipelines</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">FortiStack Secure DevSecOps Pipeline</h4>
-            <p class="mb-2">Fully automated DevSecOps pipeline with Terraform, GitHub Actions, Docker, ECR, EKS, and vulnerability scanning.</p>
-          </div>
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">Secure Banking CI/CD Pipeline</h4>
-            <p class="mb-2">Production-grade pipeline for containerized banking apps using GitHub Actions, AWS Fargate, and security tools.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Hero -->
+  <section class="bg-[--primary] text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
+    <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
+  </section>
 
-      <!-- Group: Serverless Projects -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Serverless Projects</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">Fintech Payment System (Serverless)</h4>
-            <p class="mb-2">Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
-          </div>
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">Logistics Tracking Platform</h4>
-            <p class="mb-2">Real-world logistics tracking API using AWS Serverless, Terraform, GitHub Actions, and Grafana for observability.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Group: Monitoring -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Monitoring</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">Monitoring Stack with Prometheus & Grafana</h4>
-            <p class="mb-2">Deployed node-exporter, kube-state-metrics, Prometheus, and Grafana with alerting and custom dashboards.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Group: Infrastructure as Code (IaC) -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Infrastructure as Code (IaC)</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-black p-6 rounded shadow-md">
-            <h4 class="text-xl font-semibold mb-2 text-white">BoostPoint WordPress Infrastructure</h4>
-            <p class="mb-2">Fully automated WordPress infrastructure on AWS using modular Terraform. Deployed in phases with best practices.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unified YouTube Link -->
-      <div class="text-center mt-12">
-        <a href="https://www.youtube.com/@doyinekong/playlists" target="_blank" class="inline-block bg-[--accent] text-[--dark] px-6 py-2 rounded-full font-semibold hover:bg-white">🔗 LINK TO ALL PROJECTS: YouTube Playlist</a>
-      </div>
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+      <p class="mb-4">
+        I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
+        I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
+        With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
+        I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
+      </p>
+      <p class="mt-6">
+        I also love documenting my experiences and knowledge.<br />
+        Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
+      </p>
+      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
     </div>
   </section>
+
 </body>
 </html>
