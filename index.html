@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevOps & DevSecOps Engineer Portfolio</title>
-  <meta name="description" content="Adedoyin Ekong's professional DevOps and DevSecOps portfolio.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Adedoyin Ekong | DevOps & DevSecOps Engineer</title>
+  <meta name="description" content="Portfolio of Adedoyin Ekong - DevOps & DevSecOps Engineer">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --primary: #5E548E;
-      --accent: #BEA4E3;
-      --light: #E5E7EB;
-      --dark: #40366B;
+  <script src="https://unpkg.com/@themesberg/flowbite@1.5.1/dist/flowbite.bundle.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5E548E',
+            accent: '#BEA4E3',
+            light: '#E5E7EB',
+            dark: '#40366B'
+          }
+        }
+      }
     }
-    body {
-      font-family: 'Inter', sans-serif;
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    [data-aos] {
+      opacity: 0;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: none;
     }
   </style>
 </head>
-<body class="bg-[--dark] text-white">
+<body class="bg-dark text-white font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-[--primary] p-4 sticky top-0 shadow-md z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#about" class="hover:text-[--accent]">About</a></li>
-        <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
-        <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
-        <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
-      </ul>
+  <nav class="bg-primary text-white p-4 sticky top-0 shadow-md z-50 flex justify-between items-center">
+    <h1 class="text-xl font-bold ml-4">Adedoyin Ekong</h1>
+    <div class="flex items-center space-x-4 mr-4">
+      <a href="#about" class="hover:text-accent">About</a>
+      <a href="#skills" class="hover:text-accent">Skills</a>
+      <a href="#projects" class="hover:text-accent">Projects</a>
+      <a href="#contact" class="hover:text-accent">Contact</a>
+      <button id="theme-toggle" class="ml-4 text-white border border-white rounded px-2 py-1 text-sm">Toggle</button>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="bg-[--primary] text-white text-center py-20">
+  <section class="bg-primary text-center py-20" data-aos>
     <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
     <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+  <section id="about" class="py-16 px-4 bg-dark text-light" data-aos>
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
       <p class="mb-4">
         I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
         I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
@@ -54,195 +69,71 @@
         I also love documenting my experiences and knowledge.<br />
         Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
       </p>
-      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
+      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-accent underline">📘 Visit My Medium Blog</a>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-16 px-4 bg-[--primary] text-white">
+  <section id="skills" class="py-16 px-4 bg-[#62549e]" data-aos>
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10">Technical Skills</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
-      
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Version Control</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>CI/CD</li>
-          <li>Jenkins</li>
-          <li>GitHub Actions</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Configuration Management</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Ansible</li>
-          <li>Chef</li>
-          <li>Puppet</li>
-          <li>Terraform</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Containerization & Orchestration</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>OpenShift</li>
-          <li>Docker Swarm</li>
-          <li>Helm</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Monitoring & Logging</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Prometheus</li>
-          <li>Grafana</li>
-          <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
-          <li>Nagios</li>
-          <li>Datadog</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>AWS (expert)</li>
-          <li>Azure (familiar)</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Terraform</li>
-          <li>AWS CloudFormation</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Collaboration & Communication</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Slack</li>
-          <li>Microsoft Teams</li>
-          <li>Jira</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Testing & Quality Assurance</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Selenium</li>
-          <li>JUnit</li>
-          <li>SonarQube</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Artifact Management</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>Nexus</li>
-          <li>Artifactory</li>
-          <li>Docker Hub</li>
-          <li>AWS ECR</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold mb-2">Security & Compliance</h3>
-        <ul class="list-disc list-inside text-[--light]">
-          <li>HashiCorp Vault</li>
-          <li>Snyk</li>
-          <li>Aqua Security</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- Projects -->
-  <section id="projects" class="py-16 px-4 bg-[--dark] text-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
-
-      <!-- Microservices Platforms -->
-      <div class="mb-10">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Microservices Platforms</h3>
-        <div class="bg-black p-4 rounded">
-          <h4 class="text-lg font-bold">EKS Microservices Platform (GitOps)</h4>
-          <p class="text-[--light]">Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
-        </div>
-      </div>
-
-      <!-- DevSecOps Pipelines -->
-      <div class="mb-10">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">DevSecOps Pipelines</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">FortiStack Secure DevSecOps Pipeline</h4>
-            <p class="text-[--light]">Fully automated pipeline using GitHub Actions, Terraform, Docker, ECR, EKS, and vulnerability scanning tools.</p>
-          </div>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">Secure Banking CI/CD Pipeline</h4>
-            <p class="text-[--light]">Production-grade CI/CD pipeline using GitHub Actions, AWS Fargate, and DevSecOps tools (ZAP, Trivy, Checkov, Gitleaks).</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Serverless -->
-      <div class="mb-10">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Serverless Projects</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">Fintech Payment System (Serverless)</h4>
-            <p class="text-[--light]">Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
-          </div>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">Logistics Tracking Platform</h4>
-            <p class="text-[--light]">AWS Serverless (Lambda, API Gateway, DynamoDB) monitored with CloudWatch and Grafana. IaC with Terraform.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Monitoring -->
-      <div class="mb-10">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Monitoring</h3>
-        <div class="bg-black p-4 rounded">
-          <h4 class="text-lg font-bold">Monitoring Stack with Prometheus & Grafana</h4>
-          <p class="text-[--light]">Kubernetes monitoring stack with Prometheus, Grafana, kube-state-metrics, node-exporter, and custom dashboards.</p>
-        </div>
-      </div>
-
-      <!-- Infrastructure as Code -->
-      <div class="mb-10">
-        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Infrastructure as Code (IaC)</h3>
-        <div class="bg-black p-4 rounded">
-          <h4 class="text-lg font-bold">BoostPoint WordPress Infrastructure</h4>
-          <p class="text-[--light]">Fully automated WordPress infrastructure on AWS using modular Terraform architecture, with full CI/CD and scaling.</p>
-        </div>
-      </div>
-
-      <!-- Unified YouTube Link -->
-      <div class="text-center mt-6">
-        <a href="https://www.youtube.com/@doyinekong/playlists" class="text-[--accent] underline">📺 View All Project Videos</a>
+      <h2 class="text-3xl font-bold mb-8">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-left text-sm md:text-base">
+        <div><h3 class="font-bold">Version Control</h3><ul class="list-disc ml-5"><li>Git</li><li>GitHub</li><li>CI/CD</li><li>Jenkins</li><li>GitHub Actions</li></ul></div>
+        <div><h3 class="font-bold">Configuration Management</h3><ul class="list-disc ml-5"><li>Ansible</li><li>Chef</li><li>Puppet</li><li>Terraform</li></ul></div>
+        <div><h3 class="font-bold">Containerization & Orchestration</h3><ul class="list-disc ml-5"><li>Docker</li><li>Kubernetes</li><li>OpenShift</li><li>Docker Swarm</li><li>Helm</li></ul></div>
+        <div><h3 class="font-bold">Monitoring & Logging</h3><ul class="list-disc ml-5"><li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Nagios</li><li>Datadog</li></ul></div>
+        <div><h3 class="font-bold">Cloud Platforms</h3><ul class="list-disc ml-5"><li>AWS (expert)</li><li>Azure (familiar)</li></ul></div>
+        <div><h3 class="font-bold">IaC & Compliance</h3><ul class="list-disc ml-5"><li>Terraform</li><li>AWS CloudFormation</li><li>HashiCorp Vault</li><li>Snyk</li><li>Aqua Security</li></ul></div>
+        <div><h3 class="font-bold">Collaboration</h3><ul class="list-disc ml-5"><li>Slack</li><li>Microsoft Teams</li><li>Jira</li></ul></div>
+        <div><h3 class="font-bold">Testing & QA</h3><ul class="list-disc ml-5"><li>Selenium</li><li>JUnit</li><li>SonarQube</li></ul></div>
+        <div><h3 class="font-bold">Artifact Management</h3><ul class="list-disc ml-5"><li>Nexus</li><li>Artifactory</li><li>Docker Hub</li><li>AWS ECR</li></ul></div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 px-4 bg-[--primary] text-white">
+  <section id="contact" class="py-16 px-4 bg-dark text-white" data-aos>
     <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <p class="mb-2">📧 Email: <a href="mailto:adedoyinekong@gmail.com" class="underline text-[--light]">adedoyinekong@gmail.com</a></p>
-      <p class="mb-2">💼 GitHub: <a href="https://github.com/doyindevops" class="underline text-[--light]">doyindevops</a></p>
-      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/adedoyinekong" class="underline text-[--light]">linkedin.com/in/adedoyinekong</a></p>
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <form class="space-y-4 text-left">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 text-white" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 text-white" required />
+        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-800 text-white" rows="4" required></textarea>
+        <button type="submit" class="bg-accent text-white px-6 py-2 rounded hover:bg-primary">Send Message</button>
+      </form>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-sm text-white py-6">
+    <div class="flex justify-center space-x-4 mb-2">
+      <a href="https://github.com/doyindevops" class="hover:text-accent">GitHub</a>
+      <a href="https://www.linkedin.com/in/adedoyinekong/" class="hover:text-accent">LinkedIn</a>
+      <a href="https://medium.com/@adedoyinekong" class="hover:text-accent">Medium</a>
+    </div>
+    <p>&copy; 2025 Adedoyin Ekong. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('aos-animate');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('[data-aos]').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
