@@ -21,73 +21,79 @@
 </head>
 <body class="bg-[--dark] text-white font-sans">
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-16 px-6 bg-[--dark] text-[--light]">
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-white mb-10 text-center">🚀 Featured Projects</h2>
+      <h2 class="text-3xl font-bold text-center mb-10 text-white">Projects</h2>
 
-      <!-- Microservices -->
-      <h3 class="text-2xl font-semibold mb-4 flex items-center"><span class="mr-2">🧩</span>Microservices</h3>
-      <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">EKS Microservices Platform (GitOps)</h4>
-          <p class="mb-2">Production-grade Kubernetes microservices on AWS EKS using GitOps (ArgoCD), CI/CD, EFK logging, full observability.</p>
-          <a href="https://github.com/doyindevops/ecommerce-platform" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
+      <!-- Group: Microservices Platforms -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Microservices Platforms</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">EKS Microservices Platform (GitOps)</h4>
+            <p class="mb-2">Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Serverless -->
-      <h3 class="text-2xl font-semibold mb-4 flex items-center"><span class="mr-2">🖥️</span>Serverless</h3>
-      <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">Fintech Payment System (Serverless)</h4>
-          <p class="mb-2">Serverless backend on AWS Lambda, API Gateway, DynamoDB, with CI/CD via GitHub Actions and ZAP scans.</p>
-          <a href="https://github.com/doyindevops/fintech-payments-sim-2024" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
-        </div>
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">Logistics Tracking Platform</h4>
-          <p class="mb-2">A serverless logistics API using AWS API Gateway, Lambda, DynamoDB, monitored with CloudWatch & Grafana. IaC with Terraform.</p>
-          <a href="https://github.com/doyindevops/logistics-tracking-serverless" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
-        </div>
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">BoostPoint WordPress Infrastructure</h4>
-          <p class="mb-2">Fully automated WordPress infrastructure on AWS using Terraform with a modular and professional architecture. All infrastructure was deployed in phases with structured videos and documentation, following DevOps best practices.</p>
-          <a href="https://github.com/doyindevops/boostpoint-wordpress-aws" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
+      <!-- Group: DevSecOps Pipelines -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[--accent] mb-4">DevSecOps Pipelines</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">FortiStack Secure DevSecOps Pipeline</h4>
+            <p class="mb-2">Fully automated DevSecOps pipeline with Terraform, GitHub Actions, Docker, ECR, EKS, and vulnerability scanning.</p>
+          </div>
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">Secure Banking CI/CD Pipeline</h4>
+            <p class="mb-2">Production-grade pipeline for containerized banking apps using GitHub Actions, AWS Fargate, and security tools.</p>
+          </div>
         </div>
       </div>
 
-      <!-- DevSecOps -->
-      <h3 class="text-2xl font-semibold mb-4 flex items-center"><span class="mr-2">🛡️</span>DevSecOps</h3>
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">FortiStack Secure DevSecOps Pipeline</h4>
-          <p class="mb-2">CI/CD pipeline with integrated security scanners (Trivy, Gitleaks, Checkov) + GitHub Actions. Secure Terraform IaC deployment to AWS.</p>
-          <a href="https://github.com/doyindevops/fortistack-devsecops-pipeline" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
-        </div>
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">Secure Banking DevSecOps Pipeline</h4>
-          <p class="mb-2">Production-grade DevSecOps pipeline for securely delivering containerized applications using GitHub Actions, AWS Fargate, and industry-standard security tools.</p>
-          <a href="https://github.com/doyindevops/secure-banking-cicd" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
-        </div>
-        <div class="bg-black rounded-md p-6 shadow">
-          <h4 class="text-xl font-semibold text-[--accent] mb-2">Monitoring Stack with Prometheus & Grafana</h4>
-          <p class="mb-2">Deployed Prometheus, Grafana, kube-state-metrics, node-exporter, with alerting on EKS. Full monitoring of Kubernetes clusters.</p>
-          <a href="https://github.com/doyindevops/monitoring-k8s-prometheus" class="text-[--accent] underline mr-4">GitHub Repo</a>
-          <a href="https://www.youtube.com/@doyinekong/playlists" class="underline">📺 YouTube</a>
+      <!-- Group: Serverless Projects -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Serverless Projects</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">Fintech Payment System (Serverless)</h4>
+            <p class="mb-2">Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
+          </div>
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">Logistics Tracking Platform</h4>
+            <p class="mb-2">Real-world logistics tracking API using AWS Serverless, Terraform, GitHub Actions, and Grafana for observability.</p>
+          </div>
         </div>
       </div>
 
-      <p class="text-center mt-8 text-sm text-gray-300">
-        🔗 LINK TO ALL PROJECTS: <a href="https://www.youtube.com/@doyinekong/playlists" class="underline text-[--accent]">https://www.youtube.com/@doyinekong/playlists</a>
-      </p>
+      <!-- Group: Monitoring -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Monitoring</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">Monitoring Stack with Prometheus & Grafana</h4>
+            <p class="mb-2">Deployed node-exporter, kube-state-metrics, Prometheus, and Grafana with alerting and custom dashboards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group: Infrastructure as Code (IaC) -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-[--accent] mb-4">Infrastructure as Code (IaC)</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-black p-6 rounded shadow-md">
+            <h4 class="text-xl font-semibold mb-2 text-white">BoostPoint WordPress Infrastructure</h4>
+            <p class="mb-2">Fully automated WordPress infrastructure on AWS using modular Terraform. Deployed in phases with best practices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unified YouTube Link -->
+      <div class="text-center mt-12">
+        <a href="https://www.youtube.com/@doyinekong/playlists" target="_blank" class="inline-block bg-[--accent] text-[--dark] px-6 py-2 rounded-full font-semibold hover:bg-white">🔗 LINK TO ALL PROJECTS: YouTube Playlist</a>
+      </div>
     </div>
   </section>
-
 </body>
 </html>
