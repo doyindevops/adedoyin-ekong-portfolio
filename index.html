@@ -19,7 +19,7 @@
     }
   </style>
 </head>
-<body class="bg-[--dark] text-white font-sans">
+<body class="bg-[--dark] text-white font-sans scroll-smooth">
 
   <!-- Navbar -->
   <nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
@@ -35,12 +35,6 @@
         <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
       </ul>
     </div>
-    <ul id="mobile-menu" class="md:hidden hidden flex-col px-4 mt-2 space-y-2">
-      <li><a href="#about" class="block hover:text-[--accent]">About</a></li>
-      <li><a href="#skills" class="block hover:text-[--accent]">Skills</a></li>
-      <li><a href="#projects" class="block hover:text-[--accent]">Projects</a></li>
-      <li><a href="#contact" class="block hover:text-[--accent]">Contact</a></li>
-    </ul>
   </nav>
 
   <!-- Hero -->
@@ -64,6 +58,85 @@
         Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
       </p>
       <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-4 bg-[--primary] text-[--light]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Skills</h2>
+      <p>CI/CD · Kubernetes · AWS · Terraform · Jenkins · GitHub Actions · Docker · EKS · Monitoring · DevSecOps · WordPress Infrastructure · Helm · ArgoCD · Git · Linux · Cloud Security</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-white mb-10">Projects</h2>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Microservices Platforms</h3>
+        <div class="bg-black p-4 rounded mb-4">
+          <strong>EKS Microservices Platform (GitOps)</strong>
+          <p>Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-[--accent]">DevSecOps Pipelines</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-black p-4 rounded">
+            <strong>FortiStack Secure DevSecOps Pipeline</strong>
+            <p>Fully automated DevSecOps pipeline with Terraform, GitHub Actions, Docker, ECR, EKS, and vulnerability scanning.</p>
+          </div>
+          <div class="bg-black p-4 rounded">
+            <strong>Secure Banking CI/CD Pipeline</strong>
+            <p>Production-grade pipeline for containerized banking apps using GitHub Actions, AWS Fargate, and security tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Serverless Projects</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-black p-4 rounded">
+            <strong>Fintech Payment System (Serverless)</strong>
+            <p>Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
+          </div>
+          <div class="bg-black p-4 rounded">
+            <strong>Logistics Tracking Platform</strong>
+            <p>Real-world logistics tracking API using AWS Serverless, Terraform, GitHub Actions, and Grafana for observability.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Monitoring</h3>
+        <div class="bg-black p-4 rounded">
+          <strong>Monitoring Stack with Prometheus & Grafana</strong>
+          <p>Deployed node-exporter, kube-state-metrics, Prometheus, and Grafana with alerting and custom dashboards.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-[--accent]">Infrastructure as Code (IaC)</h3>
+        <div class="bg-black p-4 rounded">
+          <strong>BoostPoint WordPress Infrastructure</strong>
+          <p>Fully automated WordPress infrastructure on AWS using Terraform with a modular, phased, and documented DevOps approach.</p>
+        </div>
+      </div>
+
+      <p class="text-center mt-8"><a href="https://www.youtube.com/@doyinekong/playlists" class="text-[--accent] underline">📺 Link to All Project Videos</a></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 bg-[--primary] text-[--light]">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Contact</h2>
+      <p class="mb-2">📧 <a href="mailto:adedoyinekong@gmail.com" class="underline text-[--accent]">adedoyinekong@gmail.com</a></p>
+      <p class="mb-2">💼 <a href="https://www.linkedin.com/in/adedoyinekong" class="underline text-[--accent]" target="_blank">LinkedIn</a></p>
+      <p>📁 <a href="https://github.com/doyindevops" class="underline text-[--accent]" target="_blank">GitHub</a></p>
     </div>
   </section>
 
