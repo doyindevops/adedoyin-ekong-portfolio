@@ -90,78 +90,29 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Projects -->
 <section id="projects" class="py-16 px-4 bg-[#40366B] text-white" data-aos>
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
 
-    <!-- Microservices -->
-    <h3 class="text-xl font-semibold mb-4 text-accent">Microservices Platforms</h3>
-    <div class="bg-black text-white p-4 rounded mb-6">
-      <h4 class="font-bold">EKS Microservices Platform (GitOps)</h4>
-      <p>Production-grade Kubernetes microservices on AWS EKS using ArgoCD, CI/CD, and EFK for observability.</p>
-    </div>
-
-    <!-- DevSecOps -->
-    <h3 class="text-xl font-semibold mb-4 text-accent">DevSecOps Pipelines</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      <div class="bg-gray-900 p-4 rounded">
-        <h4 class="font-bold">FortiStack Secure DevSecOps Pipeline</h4>
-        <p>Fully automated pipeline using GitHub Actions, Terraform, Docker, ECR, EKS, and vulnerability scanning tools.</p>
-      </div>
-      <div class="bg-gray-900 p-4 rounded">
-        <h4 class="font-bold">Secure Banking CI/CD Pipeline</h4>
-        <p>Production-grade CI/CD pipeline using GitHub Actions, AWS Fargate, and DevSecOps tools (ZAP, Trivy, Checkov, Gitleaks).</p>
-      </div>
-    </div>
-
-    <!-- Serverless -->
     <h3 class="text-xl font-semibold mb-4 text-accent">Serverless Projects</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
       <div class="bg-gray-900 p-4 rounded">
-        <h4 class="font-bold">Fintech Payment System (Serverless)</h4>
-        <p>Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
-      </div>
-      <div class="bg-gray-900 p-4 rounded">
         <h4 class="font-bold">Logistics Tracking Platform</h4>
         <p>AWS Serverless Lambda, API Gateway, DynamoDB monitored with CloudWatch and Grafana. IaC via Terraform.</p>
+        <a class="text-accent underline" href="https://github.com/doyindevops/logistics-tracking-platform.git" target="_blank">GitHub Repo</a>
       </div>
     </div>
 
-    <!-- Monitoring -->
     <h3 class="text-xl font-semibold mb-4 text-accent">Monitoring</h3>
     <div class="bg-black text-white p-4 rounded mb-6">
       <h4 class="font-bold">Monitoring Stack with Prometheus & Grafana</h4>
       <p>Kubernetes monitoring stack with Prometheus, Grafana, kube-state-metrics, node-exporter, and custom dashboards.</p>
-    </div>
-
-    <!-- Infrastructure -->
-    <h3 class="text-xl font-semibold mb-4 text-accent">Infrastructure as Code (IaC)</h3>
-    <div class="bg-black text-white p-4 rounded mb-6">
-      <h4 class="font-bold">BoostPoint WordPress Infrastructure</h4>
-      <p>Fully automated WordPress infrastructure on AWS using modular Terraform architecture, with full CI/CD and scaling.</p>
-    </div>
-
-    <!-- YouTube CTA -->
-    <div class="text-center mt-6">
-      <a href="https://www.youtube.com/@doyinekong/playlists" class="text-accent underline">📺 View All Project Videos</a>
+      <a class="text-accent underline" href="https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana.git" target="_blank">GitHub Repo</a>
     </div>
   </div>
 </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 px-4 bg-dark text-white" data-aos>
-    <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-      <form class="space-y-4 text-left">
-        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 text-white" required />
-        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 text-white" required />
-        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-800 text-white" rows="4" required></textarea>
-        <button type="submit" class="bg-accent text-white px-6 py-2 rounded hover:bg-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="bg-primary text-center text-sm text-white py-6">
@@ -172,27 +123,6 @@
     </div>
     <p>&copy; 2025 Adedoyin Ekong. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Theme toggle
-    const toggleBtn = document.getElementById('theme-toggle');
-    toggleBtn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-
-    // Scroll animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('aos-animate');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('[data-aos]').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
 
 </body>
 </html>
