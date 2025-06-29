@@ -3,119 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adedoyin Ekong – DevOps Portfolio</title>
+  <title>Adedoyin Ekong - DevOps Engineer</title>
+  <meta name="description" content="Adedoyin Ekong's professional DevOps and Cloud Engineering portfolio.">
+  <meta property="og:title" content="Adedoyin Ekong - DevOps Engineer" />
+  <meta property="og:description" content="Explore my DevOps and Cloud projects deployed with AWS, Kubernetes, Terraform, and GitHub Actions." />
+  <meta property="og:url" content="https://adedoyin-ekong-portfolio.vercel.app" />
+  <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #5E548E;
+      --accent: #BEA4E3;
+      --light: #E5E7EB;
+      --dark: #40366B;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-[--dark] text-white font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-gray-900 text-white p-4 sticky top-0 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Adedoyin Ekong</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="hover:text-gray-300">About</a></li>
-        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
-        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+  <nav class="bg-[--primary] text-white p-4 sticky top-0 shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Adedoyin Ekong</h1>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">&#9776;</button>
+      </div>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-[--accent]">About</a></li>
+        <li><a href="#skills" class="hover:text-[--accent]">Skills</a></li>
+        <li><a href="#projects" class="hover:text-[--accent]">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[--accent]">Contact</a></li>
       </ul>
     </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col px-4 mt-2 space-y-2">
+      <li><a href="#about" class="block hover:text-[--accent]">About</a></li>
+      <li><a href="#skills" class="block hover:text-[--accent]">Skills</a></li>
+      <li><a href="#projects" class="block hover:text-[--accent]">Projects</a></li>
+      <li><a href="#contact" class="block hover:text-[--accent]">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-600 text-white text-center py-20">
-    <h2 class="text-4xl font-bold mb-2">DevOps & DevSecOps Engineer</h2>
-    <p class="text-lg">Delivering scalable cloud infrastructure, security-first CI/CD, and production-grade automation</p>
+  <!-- Hero -->
+  <section class="bg-[--primary] text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
+    <p class="text-lg max-w-xl mx-auto">Delivering scalable cloud infrastructure, security-first CI/CD, and production-grade automation</p>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
-      <p class="text-lg text-gray-700">
-        I'm a DevOps and DevSecOps Engineer passionate about building secure, scalable, and highly available infrastructure on AWS. I work with Kubernetes, Terraform, ArgoCD, GitHub Actions, and observability stacks like Prometheus and EFK. I’ve led real-world production deployments across microservices platforms, WordPress stacks, fintech pipelines, and more.
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+      <p>
+        I'm a DevOps and DevSecOps Engineer passionate about building secure, scalable, and highly available infrastructure on AWS. I work with Kubernetes, Terraform, ArgoCD, GitHub Actions, and observability stacks like Prometheus and EFK. I've led real-world production deployments across microservices platforms, WordPress stacks, fintech pipelines, and more.
       </p>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="bg-gray-200 py-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">CI/CD</h3>
-          <p class="text-gray-600">GitHub Actions, Jenkins</p>
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-[--light] text-black">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">CI/CD</h3><p>GitHub Actions, Jenkins</p></div>
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">Cloud & Infra</h3><p>AWS, Terraform, EKS, EC2</p></div>
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">Containers</h3><p>Docker, Kubernetes</p></div>
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">Security</h3><p>Trivy, Checkov, Gitleaks</p></div>
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">Monitoring</h3><p>Prometheus, Grafana, EFK</p></div>
+        <div class="bg-white p-6 rounded shadow-md"><h3 class="font-semibold">Scripting</h3><p>Bash, Python</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8 text-white">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-black p-6 rounded shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-[--accent]">EKS Microservices Platform (GitOps)</h3>
+          <p class="mb-3">Production-grade Kubernetes microservices on AWS EKS using GitOps (ArgoCD), CI/CD, EFK logging, full observability.</p>
+          <a href="https://github.com/doyindevops/ecommerce-platform" target="_blank" class="text-[--accent] hover:underline">GitHub Repo</a>
         </div>
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">Cloud & Infra</h3>
-          <p class="text-gray-600">AWS, Terraform, EKS, EC2</p>
+        <div class="bg-black p-6 rounded shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-[--accent]">Terraform WordPress Stack</h3>
+          <p class="mb-3">High-availability WordPress on AWS with modular Terraform (EC2, RDS, ALB, Auto Scaling).</p>
+          <a href="https://github.com/doyindevops/boostpoint-wordpress-aws" target="_blank" class="text-[--accent] hover:underline">GitHub Repo</a>
         </div>
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">Containers</h3>
-          <p class="text-gray-600">Docker, Kubernetes</p>
+        <div class="bg-black p-6 rounded shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-[--accent]">Monitoring Stack with Prometheus & Grafana</h3>
+          <p class="mb-3">Deployed node-exporter, kube-state-metrics, Prometheus, Grafana with custom dashboards and alerting on EKS.</p>
+          <a href="https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana" target="_blank" class="text-[--accent] hover:underline">GitHub Repo</a>
         </div>
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">Security</h3>
-          <p class="text-gray-600">Trivy, Checkov, Gitleaks</p>
-        </div>
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">Monitoring</h3>
-          <p class="text-gray-600">Prometheus, Grafana, EFK</p>
-        </div>
-        <div class="bg-white p-4 rounded shadow text-center">
-          <h3 class="font-semibold">Scripting</h3>
-          <p class="text-gray-600">Bash, Python</p>
+        <div class="bg-black p-6 rounded shadow-md">
+          <h3 class="text-xl font-semibold mb-2 text-[--accent]">Fintech Payment System (Serverless)</h3>
+          <p class="mb-3">Serverless backend on AWS Lambda, API Gateway, DynamoDB, with CI/CD via GitHub Actions and ZAP scans.</p>
+          <a href="https://github.com/doyindevops/fintech-payments-sim-2024" target="_blank" class="text-[--accent] hover:underline">GitHub Repo</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
-
-      <div class="grid gap-6">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold">EKS Microservices Platform (GitOps)</h3>
-          <p class="text-gray-700 mb-2">Production-grade Kubernetes microservices on AWS EKS using ArgoCD, with CI/CD, EFK logging, and full observability.</p>
-          <a href="https://github.com/doyindevops/ecommerce-platform" class="text-blue-600 hover:underline">GitHub Repo</a>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold">Terraform WordPress Stack</h3>
-          <p class="text-gray-700 mb-2">High-availability WordPress on AWS with modular Terraform (EC2, RDS, ALB, Auto Scaling).</p>
-          <a href="https://github.com/doyindevops/boostpoint-wordpress-aws" class="text-blue-600 hover:underline">GitHub Repo</a>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold">Monitoring Stack with Prometheus & Grafana</h3>
-          <p class="text-gray-700 mb-2">Deployed node-exporter, kube-state-metrics, Prometheus, and Grafana with custom dashboards and alerting on EKS.</p>
-          <a href="https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana" class="text-blue-600 hover:underline">GitHub Repo</a>
-        </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold">Fintech Payment System (Serverless)</h3>
-          <p class="text-gray-700 mb-2">Serverless backend on AWS Lambda, API Gateway, DynamoDB, with secure CI/CD via GitHub Actions and ZAP scans.</p>
-          <a href="https://github.com/doyindevops/fintech-payments-sim-2024" class="text-blue-600 hover:underline">GitHub Repo</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-100 py-16 px-4">
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <p class="text-gray-700 mb-4">📧 adedoyinekong@gmail.com</p>
-      <div class="flex justify-center gap-6 mt-4">
-        <a href="https://www.linkedin.com/in/adedoyin-ekong/" class="text-blue-600 hover:underline">LinkedIn</a>
-        <a href="https://github.com/doyindevops" class="text-blue-600 hover:underline">GitHub</a>
+  <!-- Contact -->
+  <section id="contact" class="bg-[--light] text-black py-16">
+    <div class="text-center max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="mb-6">Want to collaborate or discuss an opportunity? Reach out to me directly via email or LinkedIn.</p>
+      <a href="mailto:adedoyinekong@gmail.com" class="bg-[--primary] text-white px-6 py-2 rounded-full hover:bg-[--accent]">Email Me</a>
+      <div class="mt-6 space-x-6">
+        <a href="https://github.com/doyindevops" target="_blank" class="text-[--primary] hover:text-[--accent]">GitHub</a>
+        <a href="https://www.linkedin.com/in/adedoyin-ekong/" target="_blank" class="text-[--primary] hover:text-[--accent]">LinkedIn</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-4">
-    <p>&copy; 2025 Adedoyin Ekong. All rights reserved.</p>
+  <footer class="bg-[--primary] text-center text-white py-4">
+    &copy; 2025 Adedoyin Ekong. All rights reserved.
   </footer>
 
+  <!-- Mobile menu toggle -->
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
