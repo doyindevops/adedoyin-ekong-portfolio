@@ -49,86 +49,71 @@
     <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
-      <p class="mb-4">
-        I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
-        I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
-        With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
-        I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
-      </p>
-      <p class="mt-6">
-        I also love documenting my experiences and knowledge.<br />
-        Through personal stories, real projects, and practical walkthroughs, I break down complex tools like GitHub Actions, Terraform, Kubernetes, and AWS into simple, relatable lessons.
-      </p>
-      <a href="https://medium.com/@adedoyinekong" class="inline-block mt-4 text-[--accent] underline">📘 Visit My Medium Blog</a>
-    </div>
-  </section>
-
   <!-- Projects -->
   <section id="projects" class="py-16 px-4 bg-[--dark] text-[--light]">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8 text-white">Projects</h2>
 
-      <!-- Microservices Projects -->
-      <h3 class="text-2xl text-[--accent] font-semibold mb-4">⚙️ Microservices</h3>
-      <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <!-- Microservices -->
+      <h3 class="text-2xl font-semibold text-[--accent] flex items-center mb-4">
+        <span class="mr-2">🧩</span> Microservices
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
         <div class="bg-black p-6 rounded shadow-md">
           <h4 class="text-xl font-semibold text-[--accent] mb-2">EKS Microservices Platform (GitOps)</h4>
-          <img src="https://github.com/doyindevops/ecommerce-platform/actions/workflows/main.yml/badge.svg" alt="CI/CD Badge" class="mb-2">
           <p class="mb-2">Production-grade Kubernetes microservices on AWS EKS using GitOps (ArgoCD), CI/CD, EFK logging, full observability.</p>
-          <div class="space-x-4">
-            <a href="https://github.com/doyindevops/ecommerce-platform" target="_blank" class="text-[--accent] underline">GitHub Repo</a>
-            <a href="https://www.youtube.com/playlist?list=PLDVPz7xFoM9uJqzlm-6U2zKEs-qe3nJXn" target="_blank" class="text-[--accent] underline">📺 YouTube</a>
-          </div>
         </div>
       </div>
 
-      <!-- Serverless Projects -->
-      <h3 class="text-2xl text-[--accent] font-semibold mb-4">🖥️ Serverless</h3>
-      <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <!-- Serverless -->
+      <h3 class="text-2xl font-semibold text-[--accent] flex items-center mb-4">
+        <span class="mr-2">💻</span> Serverless
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
         <div class="bg-black p-6 rounded shadow-md">
           <h4 class="text-xl font-semibold text-[--accent] mb-2">Fintech Payment System (Serverless)</h4>
-          <img src="https://github.com/doyindevops/fintech-payments-sim-2024/actions/workflows/ci-cd.yml/badge.svg" alt="CI/CD Badge" class="mb-2">
           <p class="mb-2">Serverless backend on AWS Lambda, API Gateway, DynamoDB, with CI/CD via GitHub Actions and ZAP scans.</p>
-          <div class="space-x-4">
-            <a href="https://github.com/doyindevops/fintech-payments-sim-2024" target="_blank" class="text-[--accent] underline">GitHub Repo</a>
-            <a href="https://www.youtube.com/playlist?list=PLDVPz7xFoM9c-6MwPHWDvXLUJlApB6a3W" target="_blank" class="text-[--accent] underline">📺 YouTube</a>
-          </div>
         </div>
-
         <div class="bg-black p-6 rounded shadow-md">
           <h4 class="text-xl font-semibold text-[--accent] mb-2">Logistics Tracking Platform</h4>
-          <img src="https://github.com/doyindevops/logistics-tracking-platform/actions/workflows/ci.yml/badge.svg" alt="CI/CD Badge" class="mb-2">
           <p class="mb-2">A serverless logistics API using AWS API Gateway, Lambda, DynamoDB, monitored with CloudWatch & Grafana. IaC with Terraform.</p>
-          <div class="space-x-4">
-            <a href="https://github.com/doyindevops/logistics-tracking-platform" target="_blank" class="text-[--accent] underline">GitHub Repo</a>
-            <a href="https://www.youtube.com/playlist?list=PLDVPz7xFoM9cXvTVWezHTqa4D_iULUNgW" target="_blank" class="text-[--accent] underline">📺 YouTube</a>
-          </div>
         </div>
       </div>
 
-      <!-- DevSecOps Projects -->
-      <h3 class="text-2xl text-[--accent] font-semibold mb-4">🛡️ DevSecOps</h3>
+      <!-- DevSecOps -->
+      <h3 class="text-2xl font-semibold text-[--accent] flex items-center mb-4">
+        <span class="mr-2">🛡️</span> DevSecOps
+      </h3>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-black p-6 rounded shadow-md">
           <h4 class="text-xl font-semibold text-[--accent] mb-2">FortiStack Secure DevSecOps Pipeline</h4>
-          <img src="https://github.com/doyindevops/fortistack-devsecops/actions/workflows/devsecops.yml/badge.svg" alt="CI/CD Badge" class="mb-2">
           <p class="mb-2">CI/CD pipeline with integrated security scanners (Trivy, Gitleaks, Checkov) + GitHub Actions. Secure Terraform IaC deployment to AWS.</p>
-          <a href="https://github.com/doyindevops/fortistack-devsecops" target="_blank" class="text-[--accent] underline">GitHub Repo</a>
         </div>
-
         <div class="bg-black p-6 rounded shadow-md">
           <h4 class="text-xl font-semibold text-[--accent] mb-2">Monitoring Stack with Prometheus & Grafana</h4>
-          <img src="https://github.com/doyindevops/monitoring-k8s-prometheus/actions/workflows/monitoring.yml/badge.svg" alt="CI/CD Badge" class="mb-2">
           <p class="mb-2">Deployed Prometheus, Grafana, kube-state-metrics, node-exporter, with alerting on EKS. Full monitoring of Kubernetes clusters.</p>
-          <a href="https://github.com/doyindevops/monitoring-k8s-prometheus" target="_blank" class="text-[--accent] underline">GitHub Repo</a>
         </div>
       </div>
+
+      <!-- Unified Link -->
+      <p class="text-center mt-10 text-lg">
+        📺 <strong>LINK TO ALL PROJECTS:</strong> <a href="https://www.youtube.com/@doyinekong/playlists" class="text-[--accent] underline" target="_blank">https://www.youtube.com/@doyinekong/playlists</a>
+      </p>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-[--primary] text-center text-white py-4 mt-8">
+    &copy; 2025 Adedoyin Ekong. All rights reserved.
+  </footer>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 
 </body>
 </html>
