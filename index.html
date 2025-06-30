@@ -6,6 +6,7 @@
   <title>DevOps & DevSecOps Engineer Portfolio</title>
   <meta name="description" content="Adedoyin Ekong's professional DevOps and DevSecOps portfolio.">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -35,19 +36,19 @@
   </nav>
 
   <!-- Hero -->
-  <section class="bg-[--primary] text-white text-center py-20">
+  <section class="bg-[--primary] text-white text-center py-20" data-aos="fade-down">
     <h2 class="text-4xl font-bold mb-4">DevOps & DevSecOps Engineer</h2>
     <p class="text-lg max-w-xl mx-auto">Delivering secure cloud infrastructure, CI/CD pipelines, and automation at scale.</p>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]">
+  <section id="about" class="py-16 px-4 bg-[--dark] text-[--light]" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
       <p class="mb-4">
         I’m a DevOps Engineer dedicated to building fast, secure, and scalable systems through automation and a DevSecOps mindset.
         I specialize in designing robust CI/CD pipelines that streamline delivery while embedding security and compliance from code to cloud.
-        With deep expertise in AWS, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
+        With deep expertise in AWS, and great familiarity of Azure and GCP, I architect resilient infrastructure—whether serverless or containerized—to ensure performance and reliability.
         I’m passionate about tightening feedback loops and minimizing risks without compromising speed.
       </p>
       <p class="mt-6">
@@ -59,31 +60,60 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-16 px-4 bg-[--primary] text-white">
+  <section id="skills" class="py-16 px-4 bg-[--primary] text-white" data-aos="fade-up">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-10">Technical Skills</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
-        <div><h3 class="text-xl font-semibold mb-2">Version Control</h3><ul class="list-disc list-inside text-[--light]"><li>Git</li><li>GitHub</li><li>CI/CD</li><li>Jenkins</li><li>GitHub Actions</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Configuration Management</h3><ul class="list-disc list-inside text-[--light]"><li>Ansible</li><li>Chef</li><li>Puppet</li><li>Terraform</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Containerization & Orchestration</h3><ul class="list-disc list-inside text-[--light]"><li>Docker</li><li>Kubernetes</li><li>OpenShift</li><li>Docker Swarm</li><li>Helm</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Monitoring & Logging</h3><ul class="list-disc list-inside text-[--light]"><li>Prometheus</li><li>Grafana</li><li>ELK Stack (Elasticsearch, Logstash, Kibana)</li><li>Nagios</li><li>Datadog</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3><ul class="list-disc list-inside text-[--light]"><li>AWS (expert)</li><li>Azure (familiar)</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3><ul class="list-disc list-inside text-[--light]"><li>Terraform</li><li>AWS CloudFormation</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Collaboration & Communication</h3><ul class="list-disc list-inside text-[--light]"><li>Slack</li><li>Microsoft Teams</li><li>Jira</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Testing & QA</h3><ul class="list-disc list-inside text-[--light]"><li>Selenium</li><li>JUnit</li><li>SonarQube</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Artifact Management</h3><ul class="list-disc list-inside text-[--light]"><li>Nexus</li><li>Artifactory</li><li>Docker Hub</li><li>AWS ECR</li></ul></div>
-        <div><h3 class="text-xl font-semibold mb-2">Security & Compliance</h3><ul class="list-disc list-inside text-[--light]"><li>HashiCorp Vault</li><li>Snyk</li><li>Aqua Security</li></ul></div>
+        <div data-aos="fade-up" data-aos-delay="50">
+          <h3 class="text-xl font-semibold mb-2">Version Control</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Git</li><li>GitHub</li><li>CI/CD</li><li>Jenkins</li><li>GitHub Actions</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">Configuration Management</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Ansible</li><li>Chef</li><li>Puppet</li><li>Terraform</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150">
+          <h3 class="text-xl font-semibold mb-2">Containerization & Orchestration</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Docker</li><li>Kubernetes</li><li>OpenShift</li><li>Docker Swarm</li><li>Helm</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">Monitoring & Logging</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Nagios</li><li>Datadog</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250">
+          <h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>AWS (expert)</li><li>Azure (familiar)</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Terraform</li><li>AWS CloudFormation</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="350">
+          <h3 class="text-xl font-semibold mb-2">Collaboration & Communication</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Slack</li><li>Teams</li><li>Jira</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-semibold mb-2">Testing & QA</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Selenium</li><li>JUnit</li><li>SonarQube</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="450">
+          <h3 class="text-xl font-semibold mb-2">Artifact Management</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Nexus</li><li>Artifactory</li><li>Docker Hub</li><li>AWS ECR</li></ul>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-xl font-semibold mb-2">Security & Compliance</h3>
+          <ul class="list-disc list-inside text-[--light]"><li>Vault</li><li>Snyk</li><li>Aqua Security</li></ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-16 px-4 bg-[--dark] text-white">
+  <section id="projects" class="py-16 px-4 bg-[--dark] text-white" data-aos="fade-up">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
 
-      <!-- Microservices Platforms -->
-      <div class="mb-10">
+      <div class="mb-10" data-aos="zoom-in-up">
         <h3 class="text-xl font-semibold mb-4 text-[--accent]">Microservices Platforms</h3>
         <div class="bg-black p-4 rounded">
           <h4 class="text-lg font-bold">EKS Microservices Platform (GitOps)</h4>
@@ -92,77 +122,76 @@
         </div>
       </div>
 
-      <!-- DevSecOps Pipelines -->
-      <div class="mb-10">
+      <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="100">
         <h3 class="text-xl font-semibold mb-4 text-[--accent]">DevSecOps Pipelines</h3>
         <div class="grid md:grid-cols-2 gap-4">
           <div class="bg-black p-4 rounded">
             <h4 class="text-lg font-bold">FortiStack Secure DevSecOps Pipeline</h4>
-            <p class="text-[--light]">Fully automated pipeline using GitHub Actions, Terraform, Docker, ECR, EKS, and vulnerability scanning tools.</p>
-            <a href="https://github.com/doyindevops/fortistack-secure-cicd.git " class="underline text-[--accent]">GitHub Repo</a>
+            <p class="text-[--light]">CI/CD with GitHub Actions, Terraform, Docker, ECR, EKS, and security scanning tools.</p>
+            <a href="https://github.com/doyindevops/fortistack-secure-cicd.git" class="underline text-[--accent]">GitHub Repo</a>
           </div>
           <div class="bg-black p-4 rounded">
             <h4 class="text-lg font-bold">Secure Banking CI/CD Pipeline</h4>
-            <p class="text-[--light]">Production-grade CI/CD pipeline using GitHub Actions, AWS Fargate, and DevSecOps tools (ZAP, Trivy, Checkov, Gitleaks).</p>
+            <p class="text-[--light]">CI/CD using GitHub Actions, Fargate, and tools like ZAP, Trivy, Checkov, Gitleaks.</p>
             <a href="https://github.com/doyindevops/secure-banking-cicd.git" class="underline text-[--accent]">GitHub Repo</a>
           </div>
         </div>
       </div>
 
-      <!-- Serverless -->
-      <div class="mb-10">
+      <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="200">
         <h3 class="text-xl font-semibold mb-4 text-[--accent]">Serverless Projects</h3>
         <div class="grid md:grid-cols-2 gap-4">
           <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">Fintech Payment System (Serverless)</h4>
-            <p class="text-[--light]">Serverless backend on AWS Lambda, API Gateway, and DynamoDB with full CI/CD and security testing.</p>
+            <h4 class="text-lg font-bold">Fintech Payment System</h4>
+            <p class="text-[--light]">AWS Lambda, API Gateway, DynamoDB with CI/CD and security testing.</p>
             <a href="https://github.com/doyindevops/fintech-payments-sim-2024" class="underline text-[--accent]">GitHub Repo</a>
           </div>
           <div class="bg-black p-4 rounded">
             <h4 class="text-lg font-bold">Logistics Tracking Platform</h4>
-            <p class="text-[--light]">AWS Serverless (Lambda, API Gateway, DynamoDB) monitored with CloudWatch and Grafana. IaC with Terraform.</p>
+            <p class="text-[--light]">Lambda, API Gateway, DynamoDB, monitored via CloudWatch. IaC with Terraform.</p>
             <a href="https://github.com/doyindevops/logistics-tracking-platform" class="underline text-[--accent]">GitHub Repo</a>
           </div>
         </div>
       </div>
 
-      <!-- Monitoring -->
-      <div class="mb-10">
+      <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="300">
         <h3 class="text-xl font-semibold mb-4 text-[--accent]">Monitoring</h3>
         <div class="bg-black p-4 rounded">
-          <h4 class="text-lg font-bold">Monitoring Stack with Prometheus & Grafana</h4>
-          <p class="text-[--light]">Kubernetes monitoring stack with Prometheus, Grafana, kube-state-metrics, node-exporter, and custom dashboards.</p>
+          <h4 class="text-lg font-bold">Monitoring Stack</h4>
+          <p class="text-[--light]">Prometheus, Grafana, kube-state-metrics, node-exporter, custom dashboards.</p>
           <a href="https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana" class="underline text-[--accent]">GitHub Repo</a>
         </div>
       </div>
 
-      <!-- Infrastructure as Code -->
-      <div class="mb-10">
+      <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="400">
         <h3 class="text-xl font-semibold mb-4 text-[--accent]">Infrastructure as Code (IaC)</h3>
         <div class="bg-black p-4 rounded">
           <h4 class="text-lg font-bold">BoostPoint WordPress Infrastructure</h4>
-          <p class="text-[--light]">Fully automated WordPress infrastructure on AWS using modular Terraform architecture, with full CI/CD and scaling.</p>
+          <p class="text-[--light]">Modular Terraform WordPress stack with CI/CD and auto-scaling on AWS.</p>
           <a href="https://github.com/doyindevops/boostpoint-wordpress-aws" class="underline text-[--accent]">GitHub Repo</a>
         </div>
       </div>
 
-      <!-- Unified YouTube Link -->
-      <div class="text-center mt-6">
+      <div class="text-center mt-6" data-aos="fade-up">
         <a href="https://www.youtube.com/@doyinekong/playlists" class="text-[--accent] underline">📺 View All Project Videos</a>
       </div>
     </div>
   </section>
 
-
   <!-- Contact -->
-  <section id="contact" class="py-16 px-4 bg-[--primary] text-white">
+  <section id="contact" class="py-16 px-4 bg-[--primary] text-white" data-aos="fade-up">
     <div class="max-w-xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-4">Contact</h2>
       <p class="mb-2">📧 Email: <a href="mailto:adedoyinekong@gmail.com" class="underline text-[--light]">adedoyinekong@gmail.com</a></p>
       <p class="mb-2">💼 GitHub: <a href="https://github.com/doyindevops" class="underline text-[--light]">doyindevops</a></p>
-      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/adedoyin-ekong" class="underline text-[--light]">linkedin.com/in/adedoyin-ekong</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/adedoyin-ekong/" class="underline text-[--light]">linkedin.com/in/adedoyin-ekong</a></p>
     </div>
   </section>
 
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
