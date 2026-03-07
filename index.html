@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Adedoyin Ekong – Senior DevOps & DevSecOps Engineer specializing in AWS EKS, Kafka, GitOps, Terraform, and FinTech-grade MLOps." />
+  <meta name="description" content="Adedoyin Ekong – DevOps Engineer specializing in AWS EKS, Kafka, GitOps, Terraform, and FinTech-grade MLOps." />
   <meta name="keywords" content="DevOps, DevSecOps, AWS EKS, Kafka, Terraform, Kubernetes, GitOps, FinTech, MLOps, Adedoyin Ekong" />
   
   <!-- SEO & Social Sharing -->
-  <title>Adedoyin Ekong – DevOps & DevSecOps Engineer | AWS • Kubernetes • Terraform • CI/CD • GitOps • Kafka • Observability</title>
-  <meta property="og:title" content="Adedoyin Ekong – Senior DevOps & DevSecOps Engineer" />
+  <title>Adedoyin Ekong – DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD | DevSecOps</title>
+  <meta property="og:title" content="Adedoyin Ekong – DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD | DevSecOps" />
   <meta property="og:description" content="Production-grade real-time streaming, Kubernetes platforms, and secure CI/CD pipelines built for FinTech scale." />
   <meta property="og:image" content="https://raw.githubusercontent.com/doyindevops/doyindevops/main/portfolio-preview.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -65,18 +65,27 @@
   </nav>
 
   <main id="main-content" role="main">
-    <!-- HERO UPGRADED -->
-    <section class="bg-[--primary] text-white text-center py-20" data-aos="fade-down">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Adedoyin Ekong</h2>
-      <p class="text-xl md:text-2xl mb-6 opacity-90">DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD | DevSecOps</p>
-      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-80 leading-relaxed">
-        I design and operate secure, production-grade cloud infrastructure and CI/CD systems. My work focuses on Kubernetes platforms, real-time data pipelines, and FinTech-grade systems on AWS — powered by Terraform, GitOps, Kafka, and full-stack observability.
-      </p>
-      <div class="flex justify-center">
-        <a href="#projects" 
-           class="border border-[--accent] px-10 py-4 rounded text-lg font-medium hover:bg-[--accent] hover:text-black transition">
-          See My Projects →
-        </a>
+    <!-- HERO UPGRADED with Profile Picture -->
+    <section class="bg-[--primary] text-white text-center py-16 md:py-20" data-aos="fade-down">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col items-center">
+          <img 
+            src="https://raw.githubusercontent.com/doyindevops/doyindevops/main/profile.jpg" 
+            alt="Adedoyin Ekong - DevOps Engineer" 
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-[--accent] shadow-xl mb-6"
+          />
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Adedoyin Ekong</h2>
+          <p class="text-xl md:text-2xl mb-6 opacity-90">DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD | DevSecOps</p>
+          <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-80 leading-relaxed">
+            I design and operate secure, production-grade cloud infrastructure and CI/CD systems. My work focuses on Kubernetes platforms, real-time data pipelines, and FinTech-grade systems on AWS — powered by Terraform, GitOps, Kafka, and full-stack observability.
+          </p>
+          <div class="flex justify-center">
+            <a href="#projects" 
+               class="border border-[--accent] px-10 py-4 rounded text-lg font-medium hover:bg-[--accent] hover:text-black transition">
+              See My Projects →
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -135,59 +144,40 @@
           These projects demonstrate end-to-end design, deployment, and operation of production-style cloud systems. Each project was built and deployed independently to replicate real-world DevOps, security, and observability challenges commonly found in production and cloud-native environments.
         </p>
 
-        <div class="mb-10" data-aos="zoom-in-up">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">Microservices Platforms</h3>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">EKS Microservices Platform (GitOps)</h4>
-            <p class="text-[--light]">Production-style Kubernetes microservices deployment using AWS EKS, GitOps workflows, observability, and secure container delivery.</p>
-            <a href="https://github.com/doyindevops/ecommerce-platform" rel="noopener noreferrer" class="underline text-[--accent]">GitHub Repo</a>
-            <!-- Add your diagram later -->
-            <!-- <img src="https://raw.githubusercontent.com/doyindevops/ecommerce-platform/main/architecture.png" alt="Architecture" class="mt-4 rounded border border-[--accent]"> -->
+        <div class="space-y-12">
+          <div data-aos="fade-up">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">Microservices Platforms</h3>
+            <div id="microservices-projects" class="grid md:grid-cols-2 gap-6"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="50">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">Real-Time Streaming & MLOps</h3>
+            <div id="streaming-projects" class="grid md:grid-cols-2 gap-6"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">DevSecOps Pipelines</h3>
+            <div id="devsecops-projects" class="grid md:grid-cols-2 gap-6"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="150">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">Serverless Projects</h3>
+            <div id="serverless-projects" class="grid md:grid-cols-2 gap-6"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">Monitoring</h3>
+            <div id="monitoring-projects" class="grid md:grid-cols-2 gap-6"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="250">
+            <h3 class="text-xl font-semibold mb-6 text-[--accent] text-center md:text-left">Infrastructure as Code (IaC)</h3>
+            <div id="iac-projects" class="grid md:grid-cols-2 gap-6"></div>
           </div>
         </div>
 
-        <!-- YOUR NEW STAR PROJECT -->
-        <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="50">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">Real-Time Streaming & MLOps</h3>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">End-to-End Real-Time Fraud Detection Pipeline</h4>
-            <p class="text-[--light]">End-to-end real-time streaming pipeline deployed on AWS EKS with Kafka, Prometheus, Grafana & custom production alerting — built to replicate FinTech-grade MLOps environments.</p>
-            <a href="https://github.com/doyindevops/real-time-fraud-detection-eks-kafka.git" rel="noopener noreferrer" class="underline text-[--accent]">GitHub Repo</a>
-            <!-- Just push architecture.png to your repo root and uncomment -->
-            <!-- <img src="https://raw.githubusercontent.com/doyindevops/real-time-fraud-detection-eks-kafka/main/architecture.png" alt="Real-time Fraud Detection Architecture" class="mt-4 w-full rounded border border-[--accent] shadow-lg"> -->
-          </div>
-        </div>
-
-        <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="100">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">DevSecOps Pipelines</h3>
-          <div id="devsecops-projects" class="grid md:grid-cols-2 gap-4"></div>
-        </div>
-
-        <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="200">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">Serverless Projects</h3>
-          <div id="serverless-projects" class="grid md:grid-cols-2 gap-4"></div>
-        </div>
-
-        <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="300">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">Monitoring</h3>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">Monitoring Stack</h4>
-            <p class="text-[--light]">Prometheus, Grafana, kube-state-metrics, node-exporter, custom dashboards.</p>
-            <a href="https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana" rel="noopener noreferrer" class="underline text-[--accent]">GitHub Repo</a>
-          </div>
-        </div>
-
-        <div class="mb-10" data-aos="zoom-in-up" data-aos-delay="400">
-          <h3 class="text-xl font-semibold mb-4 text-[--accent]">Infrastructure as Code (IaC)</h3>
-          <div class="bg-black p-4 rounded">
-            <h4 class="text-lg font-bold">BoostPoint WordPress Infrastructure</h4>
-            <p class="text-[--light]">Production-grade WordPress infrastructure on AWS with Terraform, EC2 autoscaling, and resilient architecture.</p>
-            <a href="https://github.com/doyindevops/boostpoint-wordpress-aws" rel="noopener noreferrer" class="underline text-[--accent]">GitHub Repo</a>
-          </div>
-        </div>
-
-        <div class="text-center mt-6" data-aos="fade-up">
-          <a href="https://www.youtube.com/@doyinekong" rel="noopener noreferrer" class="text-[--accent] underline">See DevOps Project Demos</a>
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a href="https://www.youtube.com/@doyinekong" rel="noopener noreferrer" class="text-[--accent] underline text-lg">View All Project Videos</a>
         </div>
       </div>
     </section>
@@ -211,7 +201,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Adedoyin Ekong",
-    "jobTitle": "DevOps & DevSecOps Engineer",
+    "jobTitle": "DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD | DevSecOps",
     "url": "https://yourdomain.com",
     "sameAs": [
       "https://www.linkedin.com/in/adedoyin-ekong/",
@@ -230,32 +220,83 @@
       const mobileMenu = document.getElementById('mobile-menu');
       menuToggle?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
+      // All projects now in one dynamic object
       const projects = {
+        microservices: [
+          {
+            title: "EKS Microservices Platform (GitOps)",
+            description: "Production-style Kubernetes microservices deployment using AWS EKS, GitOps workflows, observability, and secure container delivery.",
+            link: "https://github.com/doyindevops/ecommerce-platform"
+          }
+        ],
+        streaming_mlops: [
+          {
+            title: "End-to-End Real-Time Fraud Detection Pipeline",
+            description: "End-to-end real-time streaming pipeline deployed on AWS EKS with Kafka, Prometheus, Grafana & custom production alerting — built to replicate FinTech-grade MLOps environments.",
+            link: "https://github.com/doyindevops/real-time-fraud-detection-eks-kafka.git"
+          }
+        ],
         devsecops: [
-          { title: "FortiStack Secure DevSecOps Pipeline", description: "Cloud-native CI/CD pipeline with integrated security scanning, container image hardening, and automated infrastructure provisioning.", link: "https://github.com/doyindevops/fortistack-secure-cicd.git" },
-          { title: "Secure Banking CI/CD Pipeline", description: "End-to-end DevSecOps pipeline using GitHub Actions, Terraform, security scanning, and ECS deployment for a banking-style application.", link: "https://github.com/doyindevops/secure-banking-cicd.git" }
+          {
+            title: "FortiStack Secure DevSecOps Pipeline",
+            description: "Cloud-native CI/CD pipeline with integrated security scanning, container image hardening, and automated infrastructure provisioning.",
+            link: "https://github.com/doyindevops/fortistack-secure-cicd.git"
+          },
+          {
+            title: "Secure Banking CI/CD Pipeline",
+            description: "End-to-end DevSecOps pipeline using GitHub Actions, Terraform, security scanning, and ECS deployment for a banking-style application.",
+            link: "https://github.com/doyindevops/secure-banking-cicd.git"
+          }
         ],
         serverless: [
-          { title: "Fintech Payment System", description: "Event-driven fintech payment simulation using AWS serverless services and CI/CD automation.", link: "https://github.com/doyindevops/fintech-payments-sim-2024" },
-          { title: "Logistics Tracking Platform", description: "Cloud-native logistics system demonstrating infrastructure-as-code, observability, and CI/CD pipelines.", link: "https://github.com/doyindevops/logistics-tracking-platform" }
+          {
+            title: "Fintech Payment System",
+            description: "Event-driven fintech payment simulation using AWS serverless services and CI/CD automation.",
+            link: "https://github.com/doyindevops/fintech-payments-sim-2024"
+          },
+          {
+            title: "Logistics Tracking Platform",
+            description: "Cloud-native logistics system demonstrating infrastructure-as-code, observability, and CI/CD pipelines.",
+            link: "https://github.com/doyindevops/logistics-tracking-platform"
+          }
+        ],
+        monitoring: [
+          {
+            title: "Monitoring Stack",
+            description: "Prometheus, Grafana, kube-state-metrics, node-exporter, custom dashboards.",
+            link: "https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana"
+          }
+        ],
+        iac: [
+          {
+            title: "BoostPoint WordPress Infrastructure",
+            description: "Production-grade WordPress infrastructure on AWS with Terraform, EC2 autoscaling, and resilient architecture.",
+            link: "https://github.com/doyindevops/boostpoint-wordpress-aws"
+          }
         ]
       };
 
       function renderProjects(containerId, projectList) {
         const container = document.getElementById(containerId);
         if (!container) return;
+        container.innerHTML = ''; // Clear first
         projectList.forEach(p => {
           container.innerHTML += `
-            <div class="bg-black p-4 rounded" data-aos="zoom-in-up">
-              <h4 class="text-lg font-bold">${p.title}</h4>
-              <p class="text-[--light]">${p.description}</p>
-              <a href="${p.link}" rel="noopener noreferrer" class="underline text-[--accent]">GitHub Repo</a>
+            <div class="bg-black p-6 rounded-lg shadow-md" data-aos="zoom-in-up">
+              <h4 class="text-lg font-bold mb-2">${p.title}</h4>
+              <p class="text-[--light] mb-4">${p.description}</p>
+              <a href="${p.link}" rel="noopener noreferrer" class="underline text-[--accent] hover:text-white transition">GitHub Repo →</a>
             </div>`;
         });
       }
 
+      // Render all categories
+      renderProjects('microservices-projects', projects.microservices);
+      renderProjects('streaming-projects', projects.streaming_mlops);
       renderProjects('devsecops-projects', projects.devsecops);
       renderProjects('serverless-projects', projects.serverless);
+      renderProjects('monitoring-projects', projects.monitoring);
+      renderProjects('iac-projects', projects.iac);
     });
   </script>
 </body>
