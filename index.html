@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <!-- Projects – existing ones unchanged, Coming Soon replaced -->
+    <!-- Projects – corrected metrics -->
     <section id="projects" class="py-20 px-4 bg-[--dark] text-white" data-aos="fade-up">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-6">Production-Grade Projects</h2>
@@ -186,7 +186,7 @@
       </div>
     </section>
 
-    <!-- Contact – updated with new line -->
+    <!-- Contact -->
     <section id="contact" class="py-20 px-4 bg-[--primary] text-white" data-aos="fade-up">
       <div class="max-w-xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
@@ -230,30 +230,102 @@
 
       const projects = {
         microservices: [
-          { title: "EKS Microservices Platform (GitOps)", description: "Production-grade Kubernetes microservices on AWS EKS with GitOps, observability stack, secure image delivery.", link: "https://github.com/doyindevops/ecommerce-platform", tags: ["EKS", "GitOps", "Observability"], metric: "Achieved 99.95% uptime across 3 environments" }
+          {
+            title: "EKS Microservices Platform (GitOps)",
+            description: "Production-grade Kubernetes microservices on AWS EKS with GitOps (ArgoCD), Kong Ingress, EFK logging, and node scaling troubleshooting.",
+            link: "https://github.com/doyindevops/ecommerce-platform",
+            tags: ["EKS", "GitOps", "ArgoCD", "Observability"],
+            metric: "Resolved pod scheduling issues via node scaling to t3.large"
+          }
         ],
         streaming_mlops: [
-          { title: "End-to-End Real-Time Fraud Detection Pipeline", description: "Kafka-powered real-time streaming on EKS with Prometheus/Grafana alerting and FinTech-grade MLOps patterns.", link: "https://github.com/doyindevops/real-time-fraud-detection-eks-kafka.git", tags: ["Kafka", "EKS", "MLOps", "Prometheus"], metric: "Processed 500k+ events/day with <100ms latency" }
+          {
+            title: "End-to-End Real-Time Fraud Detection Pipeline",
+            description: "Kafka-powered real-time streaming on EKS with Prometheus/Grafana alerting and FinTech-grade MLOps patterns.",
+            link: "https://github.com/doyindevops/real-time-fraud-detection-eks-kafka.git",
+            tags: ["Kafka", "EKS", "MLOps", "Prometheus"],
+            metric: "Implemented full observability with custom alerting rules"
+          }
         ],
         devsecops: [
-          { title: "FortiStack Secure DevSecOps Pipeline", description: "Cloud-native CI/CD with Trivy, Hadolint, secrets scanning, hardened images, and automated IaC provisioning.", link: "https://github.com/doyindevops/fortistack-secure-cicd.git", tags: ["DevSecOps", "Trivy", "GitHub Actions"], metric: "Blocked 95% of critical vulnerabilities pre-merge" },
-          { title: "Secure Banking CI/CD Pipeline", description: "Banking-style ECS deployment pipeline with Terraform, security gates, and compliance checks.", link: "https://github.com/doyindevops/secure-banking-cicd.git", tags: ["ECS", "Terraform", "Security"], metric: "Achieved SOC 2–style compliance in pipeline" }
+          {
+            title: "FortiStack Secure DevSecOps Pipeline",
+            description: "Cloud-native CI/CD with Gitleaks (secrets), Trivy (containers), Checkov (IaC), and automated security layers.",
+            link: "https://github.com/doyindevops/fortistack-secure-cicd.git",
+            tags: ["DevSecOps", "Trivy", "GitHub Actions", "Checkov"],
+            metric: "Integrated multi-layer security scanning in pipeline"
+          },
+          {
+            title: "Secure Banking CI/CD Pipeline",
+            description: "Banking-style ECS deployment pipeline with Terraform, SonarCloud SAST, OWASP ZAP DAST, and security gates.",
+            link: "https://github.com/doyindevops/secure-banking-cicd.git",
+            tags: ["ECS", "Terraform", "Security", "ZAP"],
+            metric: "Embedded SAST/DAST security checks for compliance-style delivery"
+          }
         ],
         serverless: [
-          { title: "Fintech Payment System", description: "Event-driven payment simulation using Lambda, EventBridge, Step Functions, and secure serverless patterns.", link: "https://github.com/doyindevops/fintech-payments-sim-2024", tags: ["Serverless", "Lambda", "EventBridge"], metric: "Handled 10k+ simulated transactions/hour" },
-          { title: "Logistics Tracking Platform", description: "Cloud-native logistics system with IaC, observability, and automated CI/CD.", link: "https://github.com/doyindevops/logistics-tracking-platform", tags: ["IaC", "Observability"], metric: "Reduced provisioning time from days to minutes" }
+          {
+            title: "Fintech Payment System",
+            description: "Event-driven payment simulation using Lambda, EventBridge, Step Functions, and secure serverless patterns.",
+            link: "https://github.com/doyindevops/fintech-payments-sim-2024",
+            tags: ["Serverless", "Lambda", "EventBridge"],
+            metric: "Demonstrated secure event-driven payment workflow"
+          },
+          {
+            title: "Logistics Tracking Platform",
+            description: "Cloud-native logistics system with Terraform IaC, GitHub Actions CI/CD, and Grafana observability.",
+            link: "https://github.com/doyindevops/logistics-tracking-platform",
+            tags: ["IaC", "Terraform", "Observability"],
+            metric: "Load-tested API endpoints with automated deployment"
+          }
         ],
         monitoring: [
-          { title: "Monitoring Stack", description: "Prometheus + Grafana + kube-state-metrics + node-exporter with custom production dashboards.", link: "https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana", tags: ["Prometheus", "Grafana"], metric: "Enabled 30% faster incident detection" }
+          {
+            title: "Monitoring Stack",
+            description: "Prometheus + Grafana + kube-state-metrics + node-exporter with custom dashboards for Kubernetes monitoring.",
+            link: "https://github.com/doyindevops/Monitoring-Stack-with-Prometheus-Grafana",
+            tags: ["Prometheus", "Grafana", "Kubernetes"],
+            metric: "Built custom dashboards for cluster and node metrics"
+          }
         ],
         iac: [
-          { title: "BoostPoint WordPress Infrastructure", description: "Resilient WordPress setup on AWS with Terraform, EC2 autoscaling, ALB, and high-availability.", link: "https://github.com/doyindevops/boostpoint-wordpress-aws", tags: ["Terraform", "EC2", "Autoscaling"], metric: "Achieved 99.99% availability with autoscaling" }
+          {
+            title: "BoostPoint WordPress Infrastructure",
+            description: "Resilient WordPress setup on AWS with Terraform, EC2 autoscaling, ALB, and high-availability design.",
+            link: "https://github.com/doyindevops/boostpoint-wordpress-aws",
+            tags: ["Terraform", "EC2", "Autoscaling", "ALB"],
+            metric: "Implemented autoscaling and load-balanced architecture"
+          }
         ],
         additional: [
-          { title: "Secure GitHub Actions CI/CD Pipeline", description: "Production-style pipeline including linting, security checks, container builds, and automated deployment workflows.", link: "#", tags: ["GitHub Actions", "CI/CD", "Security"], metric: "Reduced manual errors by 90% in deployment" },
-          { title: "Kubernetes Monitoring Stack", description: "Prometheus, Grafana, kube-state-metrics, and alerting setup for monitoring Kubernetes workloads.", link: "#", tags: ["Prometheus", "Grafana", "Kubernetes"], metric: "Improved MTTR by 40% with proactive alerting" },
-          { title: "AWS Cost Optimization Automation", description: "Scripts and monitoring workflows to identify idle resources and reduce cloud spending through automation.", link: "#", tags: ["AWS", "Cost Optimization", "Automation"], metric: "Cut monthly AWS costs by 55–60%" },
-          { title: "DevOps Incident Response Playbook", description: "Runbooks and monitoring workflows designed to improve incident response and operational reliability.", link: "#", tags: ["Incident Response", "Reliability", "Observability"], metric: "Shortened average incident resolution time by 50%" }
+          {
+            title: "Secure GitHub Actions CI/CD Pipeline",
+            description: "Production-style pipeline including linting, security checks, container builds, and automated deployment workflows.",
+            link: "#",
+            tags: ["GitHub Actions", "CI/CD", "Security"],
+            metric: "Reduced manual errors through automated gates"
+          },
+          {
+            title: "Kubernetes Monitoring Stack",
+            description: "Prometheus, Grafana, kube-state-metrics, and alerting setup for monitoring Kubernetes workloads.",
+            link: "#",
+            tags: ["Prometheus", "Grafana", "Kubernetes"],
+            metric: "Enabled comprehensive cluster visibility"
+          },
+          {
+            title: "AWS Cost Optimization Automation",
+            description: "Scripts and monitoring workflows to identify idle resources and reduce cloud spending through automation.",
+            link: "#",
+            tags: ["AWS", "Cost Optimization", "Automation"],
+            metric: "Automated detection of underutilized resources"
+          },
+          {
+            title: "DevOps Incident Response Playbook",
+            description: "Runbooks and monitoring workflows designed to improve incident response and operational reliability.",
+            link: "#",
+            tags: ["Incident Response", "Reliability", "Observability"],
+            metric: "Structured approach to faster troubleshooting"
+          }
         ]
       };
 
