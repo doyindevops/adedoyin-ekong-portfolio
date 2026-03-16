@@ -241,6 +241,13 @@
             link: "https://github.com/doyindevops/ecommerce-platform",
             tags: ["EKS", "GitOps", "ArgoCD", "Observability"],
             metric: "Resolved pod scheduling issues via node scaling to t3.large"
+          },
+          {
+            title: "MiniFlix — GitOps-Driven Microservices Platform on Kubernetes",
+            description: "Netflix-style frontend and Catalog API deployed on k3s with ArgoCD, GitHub Actions, NGINX Ingress, Prometheus/Grafana, HPA, resilience testing, and Terraform infrastructure skeleton.",
+            link: "https://github.com/doyindevops/miniflix",
+            tags: ["Kubernetes", "GitOps", "ArgoCD", "NGINX Ingress", "Prometheus", "Grafana", "AWS", "Docker",],
+            metric: "Built a 2-service Kubernetes platform on AWS with GitOps, CI/CD, Prometheus/Grafana monitoring, HPA (2 to 4 replicas), and validated self-healing through pod recovery tests."
           }
         ],
         streaming_mlops: [
@@ -311,11 +318,11 @@
             metric: "Reduced manual errors through automated gates"
           },
           {
-            title: "Kubernetes Monitoring Stack",
-            description: "Prometheus, Grafana, kube-state-metrics, and alerting setup for monitoring Kubernetes workloads.",
+            title: "Chaos Engineering and Resilience Testing on k3s",
+            description: "K3s, Chaos Mesh, K6, ArgoCD, sample frontend +API, Prometheus, Grafana.",
             link: "#",
-            tags: ["Prometheus", "Grafana", "Kubernetes"],
-            metric: "Enabled comprehensive cluster visibility"
+            tags: ["Injecting controlled failures into a lightweight Kubernetes cluster to validate self-healing, availability, observability, and recovery behavior."],
+            metric: "Mean Time to Recovery (MTTR) below 60 seconds after a pod failure"
           },
           {
             title: "AWS Cost Optimization Automation",
