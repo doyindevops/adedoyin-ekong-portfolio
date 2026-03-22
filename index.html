@@ -293,6 +293,14 @@
             tags: ["Prometheus", "Grafana", "Kubernetes"],
             metric: "Built custom dashboards for cluster and node metrics"
           }
+
+         ,{
+           title: "Automated RDS Disaster Recovery & Backup Validation Pipeline",
+           description: "CloudWatch alarms, SNS email alerting, and failure simulation — then validated full recoverability by restoring a live PostgreSQL snapshot into a temporary database instance.",
+           link: "https://github.com/doyindevops/Automated-Disaster-Recovery-Backup-Validation-Pipeline-on-AWS",
+           tags: ["CloudWatch", "SNS", "RDS", "Lambda", "Alerting", "DR"],
+           metric: "Intentionally broke Lambda config to trigger alarm — confirmed SNS alert received, then restored"
+          }
         ],
         iac: [
           {
@@ -301,6 +309,14 @@
             link: "https://github.com/doyindevops/boostpoint-wordpress-aws",
             tags: ["Terraform", "EC2", "Autoscaling", "ALB"],
             metric: "Implemented autoscaling and load-balanced architecture"
+          }
+
+          ,{
+            title: "Automated RDS Disaster Recovery & Backup Validation Pipeline",
+            description: "End-to-end AWS disaster recovery pipeline proving PostgreSQL backups are genuinely restorable — scheduled snapshots, failure alerting, and live restore validation via temporary database recovery.",
+            link: "https://github.com/doyindevops/Automated-Disaster-Recovery-Backup-Validation-Pipeline-on-AWS",
+            tags: ["Terraform", "AWS RDS", "Lambda", "EventBridge", "CloudWatch", "SNS"],
+            metric: "Defined and validated RPO of 24hrs and RTO of 30–60 mins through live restore testing"
           }
         ],
       };
